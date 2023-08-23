@@ -5,10 +5,17 @@ def corner(a):
     return temp
 
 def edges(c):
-    return
-
+    if(c==1):
+        return 1
+    elif(c==2):
+        return 4
+    elif(c>2):
+        return edges(c-1)*2+corner(c-1)
  
-
+# def faces(b):
+    
+    
 d = input("enter a dimension:")
 d=int(d)
 print(corner(d))
+print(edges(d))
