@@ -37,4 +37,4 @@ for row in df.YearsExperience:
     bi.append(row) 
 # print(ai)
 # print(bi)
-print("y=", m(ai,bi),"x",c(ai,bi))
+print("y=",int(m(ai,bi)),"x+",int(c(ai,bi)))
